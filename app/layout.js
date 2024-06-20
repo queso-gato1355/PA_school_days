@@ -14,9 +14,9 @@ export const metadata = {
         url: "https://pa-school-days.vercel.app", // 실제 웹사이트 URL로 변경하세요
         images: [
           {
-            url: "https://picsum.photos/630/1200", // Open Graph 이미지 URL
-            width: 1200,
-            height: 630,
+            url: "https://pa-school-days.vercel.app/embadImage.png", // Open Graph 이미지 URL
+            width: 765,
+            height: 391,
             alt: "PA School Days",
           },
         ],
@@ -25,7 +25,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "PA School Days",
         description: "PA characters are going to school!",
-        images: ["https://picsum.photos/630/1200"], // Twitter 카드 이미지 URL
+        images: ["https://pa-school-days.vercel.app/embadImage.png"], // Twitter 카드 이미지 URL
       },
 };
 
