@@ -7,13 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
     title: "PA School Days",
     description: "PA characters are going to school!",
-    icons: [
-        {
-            rel: "icon",
-            type: "image/png",
-            href: "/favicon.png",
-        },
-    ],
 };
 
 export default function RootLayout({ children }) {
