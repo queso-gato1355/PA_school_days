@@ -28,7 +28,7 @@ export default function ArtBean() {
     return (
         <div className="w-full min-[670px]:w-1/2 min-[1000px]:w-1/3 min-[1200px]:w-1/4 min-[1800px]:w-1/5 min-[2400px]:w-1/6 flex justify-center mt-3 mb-3">
             <div 
-                className={`relative m-4 rounded-lg shadow-[#F1E4C3] shadow-lg bg-[#fffff5] hover:shadow-[#C6A969] hover:shadow-2xl border border-gray-300 overflow-hidden w-64 h-72 transition-all duration-300 hover:z-10`}
+                className={`relative m-4 rounded-lg shadow-[#863c6d] shadow-lg bg-[#fffff5] hover:shadow-[#552c48] hover:shadow-2xl border border-gray-300 overflow-hidden w-64 h-72 transition-all duration-300 hover:z-10`}
                 style={{ 
                     transform: `rotate(${isHovered ? 0 : rotation}deg) scale(${isHovered ? 1.1 : 1})`
                 }}
@@ -42,7 +42,7 @@ export default function ArtBean() {
                         className="object-cover w-full h-full"
                     />
                 </div>
-                <div className="text-center">
+                <div className="text-center text-gray-700">
                     <p>Photo by John Doe</p>
                 </div>
             </div>

@@ -2,7 +2,7 @@ export default function NavBar() {
     return (
         <nav className="flex-col justify-center p-2">
             <div className="w-full text-center p-2">
-                <span className="text-5xl">PA SCHOOL DAYS</span>
+                <span className="text-5xl font-extrabold">PA SCHOOL DAYS</span>
             </div>
             <div className="flex justify-center">
                 <button className="p-2">

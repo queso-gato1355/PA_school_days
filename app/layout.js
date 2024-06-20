@@ -32,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`${inter.className} bg-gradient-to-b from-amber-50 to-amber-200`}>
+            <body className={`${inter.className} bg-gradient-to-b from-[#F64ABD] to-[#fa67c9] text-white`}>
                 <NavBar />
                 {children}
             </body>
