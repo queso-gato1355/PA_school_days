@@ -170,7 +170,11 @@ export default function About() {
                     <div className="p-2 mt-2 grid grid-cols-3">
                         <div>
                             <div className="flex justify-center p-2">
-                                <a href="https://x.com/queso_gato1354">
+                                <a
+                                    href="https://x.com/queso_gato1354"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
                                     <img
                                         src="/profile/adrian_profile.jpg"
                                         alt="Adrian's Profile"
@@ -184,7 +188,11 @@ export default function About() {
                         </div>
                         <div>
                             <div className="flex justify-center p-2">
-                                <a href="https://x.com/ice50067617">
+                                <a
+                                    href="https://x.com/ice50067617"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
                                     <img
                                         src="/profile/ice_profile.jpg"
                                         alt="Ice's Profile"
@@ -198,7 +206,11 @@ export default function About() {
                         </div>
                         <div>
                             <div className="flex justify-center p-2">
-                                <a href="https://x.com/CorvusBlackONE">
+                                <a
+                                    href="https://x.com/CorvusBlackONE"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
                                     <img
                                         src="/profile/90913_profile.jpg"
                                         alt="90913's Profile"

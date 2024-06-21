@@ -1,14 +1,5 @@
 {
-    "artistList": [
-        {
-            "name": "test",
-            "socialMediaLink": [
-                {
-                    "name": "facebook",
-                    "link": "https://www.facebook.com/test"
-                }
-            ],
-            "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        }
+    "artistList" : [
+
     ]
 }

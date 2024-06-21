@@ -1,25 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export default function ArtBean() {
-    const [seed, setSeed] = useState("picsum");
+export default function ArtBean({ artist }) {
+    const router = useRouter();
     const [rotation, setRotation] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
-        const generateRandomString = () => {
-            const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-            let result = "";
-            for (let i = 0; i < 9; i++) {
-                result += characters.charAt(
-                    Math.floor(Math.random() * characters.length)
-                );
-            }
-            return result;
-        };
-        setSeed(generateRandomString());
-
         // Set a random rotation angle between -20 and 20 degrees
         const randomRotation = Math.floor(Math.random() * 41) - 20;
         setRotation(randomRotation);
@@ -34,16 +23,17 @@ export default function ArtBean() {
                 }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={() => router.push(`/artinfo/${artist.name}`)}
             >
                 <div className="w-full h-5/6 p-3 transition-transform duration-300">
                     <img
-                        src={`https://picsum.photos/seed/${seed}/400/600`}
-                        alt="art"
+                        src={artist.image}
+                        alt={`Artwork by ${artist.name}`}
                         className="object-cover w-full h-full"
                     />
                 </div>
                 <div className="text-center text-gray-700">
-                    <p>Photo by John Doe</p>
+                    <p>Drew by {artist.name}</p>
                 </div>
             </div>
         </div>
