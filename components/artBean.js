@@ -35,7 +35,7 @@ export default function ArtBean() {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <div className="w-full h-5/6 p-4 transition-transform duration-300">
+                <div className="w-full h-5/6 p-3 transition-transform duration-300">
                     <img
                         src={`https://picsum.photos/seed/${seed}/400/600`}
                         alt="art"

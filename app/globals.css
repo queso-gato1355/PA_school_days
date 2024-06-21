@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { /* 배경색을 F0F0F0로 */
-    --bg-color: #FFF8D6;
+:root {
+    /* 배경색을 F0F0F0로 */
+    --bg-color: #fff8d6;
+}
+
+@font-face {
+    font-family: 'Goyang';
+    src: url('/fonts/goyang.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bazzi";
+    src: url('/fonts/bazzi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         'cardboard-bg': 'var(--bg-color)'
       },
+      fontFamily: {
+        goyang: ['Goyang', 'sans-serif'],
+        bazzi: ['Bazzi', 'sans-serif'],
+      },
     },
   },
   plugins: [],
