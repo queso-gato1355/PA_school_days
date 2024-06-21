@@ -16,7 +16,7 @@ export default function DiscordBubble({ message, username, profilePic, time, del
 
     return (
         <div className={`flex justify-start items-start gap-2.5 text-left p-2 transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="pt-1 h-8 w-8">
+            <div className="pt-1 h-8 w-8 min-w-8">
                 <img
                     src={profilePic}
                     alt={`${username ? username : "Someone"}'s Profile Pic`}
