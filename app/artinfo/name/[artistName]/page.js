@@ -20,8 +20,8 @@ export default function ArtistPage({ params }) {
 
     return (
         <div className="w-full min-h-screen flex-col items-start justify-center">
-            <div className="text-center p-4 m-4">
-                <label className="text-5xl font-bazzi font-bold">
+            <div className="text-center p-4 m-4 max-[669px]:p-1 max-[669px]:m-1">
+                <label className="text-5xl max-[669px]:text-2xl font-bazzi font-bold">
                     {" "}
                     {artistName}'s Art{" "}
                 </label>
@@ -30,7 +30,7 @@ export default function ArtistPage({ params }) {
                 {artist &&
                     artist.map((artist) => (
                         <div
-                            className="bg-white p-4 m-2 rounded-xl shadow-lg hover:shadow-2xl border border-gray-500"
+                            className="bg-white p-4 m-2 rounded-xl max-w-[80%] shadow-lg hover:shadow-2xl border border-gray-500 cursor-pointer transition-all duration-300 hover:z-10"
                             onClick={() =>
                                 router.push(`/artinfo/id/${artist.id}`)
                             }
@@ -39,7 +39,7 @@ export default function ArtistPage({ params }) {
                                 <img
                                     src={artist?.image}
                                     alt={`${artistName}'s artwork`}
-                                    className="bg-gray-200 max-w-1/2"
+                                    className="bg-gray-200"
                                 />
                             ) : (
                                 <div className="w-1/2 h-1/4 bg-gray-200"></div>
