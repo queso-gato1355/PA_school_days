@@ -1,5 +1,16 @@
 {
     "artistList" : [
-
+        {
+            "id": "1",
+            "name": "StriptedAmalgam",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@StripesClusterF",
+                    "link": "https://x.com/StripesClusterF"
+                }
+            ],
+            "image": "https://i.postimg.cc/N0sJxhbk/Stripes-Cluster-F.png"
+        }
     ]
 }

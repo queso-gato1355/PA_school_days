@@ -12,7 +12,7 @@ export default function ArtBeanList() {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch("/api/artists");
+            const res = await fetch("/api/art");
             const data = await res.json();
             setArtists(data);
         }

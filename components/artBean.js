@@ -23,17 +23,18 @@ export default function ArtBean({ artist }) {
                 }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                onClick={() => router.push(`/artinfo/${artist.name}`)}
+                onClick={() => router.push(`/artinfo/id/${artist.id}`)}
             >
                 <div className="w-full h-5/6 p-3 transition-transform duration-300">
                     <img
                         src={artist.image}
                         alt={`Artwork by ${artist.name}`}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full border border-gray-200"
                     />
                 </div>
-                <div className="text-center text-gray-700">
-                    <p>Drew by {artist.name}</p>
+                <div className="flex justify-center text-center text-gray-700 mt-2">
+                    <p>Drew by</p>
+                    <p className="font-bold ml-1 cursor-pointer hover:underline transition-all duration-100" onClick={() => router.push(`/artinfo/name/${artist.name}`)}>{artist.name}</p>
                 </div>
             </div>
         </div>

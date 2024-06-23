@@ -5,20 +5,22 @@ import { twitterIconWhite, discordIcon } from "./icons";
 
 export default function SocialMedia({ mediaName, link, children }) {
     return (
-        <div className={`flex-col items-center justify-center text-center p-2 ${mediaName === "twitter" ? "bg-black" : "bg-transparent"} shadow-md rounded-xl hover:shadow-xl transition-all duration-200`}>
-            <div className="flex justify-center">
-                {mediaName === "twitter" ? twitterIconWhite : discordIcon}
+        <a
+            href={link}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-white"
+        >
+            <div
+                className={`flex-col items-center justify-center text-center p-2 ${
+                    mediaName === "twitter" ? "bg-black" : "bg-transparent"
+                } shadow-md rounded-xl hover:shadow-xl transition-all duration-200`}
+            >
+                <div className="flex justify-center">
+                    {mediaName === "twitter" ? twitterIconWhite : discordIcon}
+                </div>
+                <div className="mt-1">{children}</div>
             </div>
-            <div className="mt-1">
-                <a
-                    href={link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="text-white"
-                >
-                    {children}
-                </a>
-            </div>
-        </div>
+        </a>
     );
 }
