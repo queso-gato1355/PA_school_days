@@ -35,11 +35,15 @@ export default function ArtistPage({ params }) {
                                 router.push(`/artinfo/id/${artist.id}`)
                             }
                         >
-                            <img
-                                src={artist?.image}
-                                alt={`${artistName}'s artwork`}
-                                className="bg-gray-200 max-w-1/2"
-                            />
+                            {artist?.image ? (
+                                <img
+                                    src={artist?.image}
+                                    alt={`${artistName}'s artwork`}
+                                    className="bg-gray-200 max-w-1/2"
+                                />
+                            ) : (
+                                <div className="w-1/2 h-1/4 bg-gray-200"></div>
+                            )}
                         </div>
                     ))}
             </div>
