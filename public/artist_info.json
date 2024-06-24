@@ -11,6 +11,18 @@
                 }
             ],
             "image": "/images/StripesClusterF.png"
+        },
+        {
+            "id": "2",
+            "name": "MoonCarl",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@mooncarl63",
+                    "link": "https://x.com/mooncarl63"
+                }
+            ],
+            "image": "/images/mooncarl63.jpg"
         }
     ]
 }

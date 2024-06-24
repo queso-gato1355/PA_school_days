@@ -1,6 +1,6 @@
 import DiscordBubble from "@/components/chats/discordBubble";
-import ListElement from "@/components/listElement";
-import RuleElement from "@/components/ruleElement";
+import ListElement from "@/components/elements/listElement";
+import RuleElement from "@/components/elements/ruleElement";
 import HyperLink from "@/components/hyperLink";
 import { twitterIcon, discordIcon } from "@/components/icons";
 

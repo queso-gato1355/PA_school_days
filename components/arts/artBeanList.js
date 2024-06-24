@@ -22,7 +22,7 @@ export default function ArtBeanList() {
     return (
         <div className="w-full min-h-screen flex items-start justify-center p-4">
             {artists && artists.length !== 0 && (
-                <div className="w-full flex flex-wrap p-4">
+                <div className="w-full flex flex-wrap p-6">
                     {artists.map((artist, index) => {
                         return <ArtBean key={index} artist={artist} />;
                     })}

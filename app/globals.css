@@ -8,15 +8,21 @@
 }
 
 @font-face {
-    font-family: 'Goyang';
-    src: url('/fonts/goyang.ttf') format('truetype');
+    font-family: "Goyang";
+    src: url("/fonts/goyang.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bazzi";
-    src: url('/fonts/bazzi.ttf') format('truetype');
+    src: url("/fonts/bazzi.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+}
+
+@layer utilities {
+    .paused {
+        animation-play-state: paused;
+    }
 }

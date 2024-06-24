@@ -1,4 +1,4 @@
-import ArtBeanList from "@/components/artBeanList";
+import ArtBeanList from "@/components/arts/artBeanList";
 
 export default function Home() {
     return (

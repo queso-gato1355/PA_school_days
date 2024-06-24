@@ -1,7 +1,7 @@
 // 입력받은 social media 이름에 따라 해당하는 아이콘과 그에 따른 아이디, 링크 등을 포함하는
 // div 박스를 반환하는 함수.
 
-import { twitterIconWhite, discordIcon } from "./icons";
+import { twitterIconWhite, discordIcon } from "../icons";
 
 export default function SocialMedia({ mediaName, link, children }) {
     return (
