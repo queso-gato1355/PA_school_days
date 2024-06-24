@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     const art = await getArt(params.artId);
     if (!art) return notFound();
 
-    const { width, height } = await getImageDimensions(`${process.env.NEXT_PUBLIC_API_URL}${art.image}`);
+    const { width, height } = await getImageDimensions(art.image);
 
     return {
         title: "PA School Days",

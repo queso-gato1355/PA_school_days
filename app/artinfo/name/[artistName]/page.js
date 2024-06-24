@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     if (!artistData || artistData.length === 0) return notFound();
 
     const firstArtwork = artistData[0];
-    const { width, height } = await getImageDimensions(`${process.env.NEXT_PUBLIC_API_URL}${firstArtwork.image}`);
+    const { width, height } = await getImageDimensions(firstArtwork.image);
 
     return {
         title: "PA School Days",
