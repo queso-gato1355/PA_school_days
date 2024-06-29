@@ -23,6 +23,30 @@
                 }
             ],
             "image": "/images/mooncarl63.jpg"
+        },
+        {
+            "id": "3",
+            "name": "MuYun",
+            "socials": [
+                {
+                    "media": "None",
+                    "id": "muyun",
+                    "link": "None"
+                }
+            ],
+            "image": "/images/muyun.jpg"
+        },
+        {
+            "id": "4",
+            "name": "germs",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@germs144693",
+                    "link": "https://x.com/germs144693"
+                }
+            ],
+            "image": "/images/germs144693.jpg"
         }
     ]
 }

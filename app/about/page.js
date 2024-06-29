@@ -80,7 +80,7 @@ export default function About() {
 
             <div className="w-full p-10 text-center font-goyang">
                 <span className="font-extrabold italic text-4xl">
-                    Imagin PA characters wearing your school uniform! How cool
+                    Imagine PA characters wearing your school uniform! How cool
                     is that?
                 </span>
             </div>
