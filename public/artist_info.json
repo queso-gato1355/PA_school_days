@@ -71,6 +71,18 @@
                 }
             ],
             "image": "/images/CorvusBlackONE.jpg"
+        },
+        {
+            "id": "7",
+            "name": "박델몬",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@eiocbrtn8916",
+                    "link": "https://x.com/eiocbrtn8916"
+                }
+            ],
+            "image": "/images/eiocbrtn8916.jpg"
         }
     ]
 }
