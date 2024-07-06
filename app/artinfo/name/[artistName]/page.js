@@ -36,23 +36,23 @@ export async function generateMetadata({ params }) {
 
     return {
         title: "PA School Days",
-        description: `${params.artistName}'s artworks! Check them out here!`,
+        description: `${artistName}'s artworks! Check them out here!`,
         openGraph: {
             title: "PA School Days",
-            description: `${params.artistName}'s artworks! Check them out here!`,
+            description: `${artistName}'s artworks! Check them out here!`,
             images: [
                 {
                     url: firstArtwork.image,
                     width: width,
                     height: height,
-                    alt: `${params.artistName}'s artwork`,
+                    alt: `${artistName}'s artwork`,
                 },
             ],
         },
         twitter: {
             card: "summary_large_image",
             title: "PA School Days",
-            description: `${params.artistName}'s artworks! Check them out here!`,
+            description: `${artistName}'s artworks! Check them out here!`,
             images: [firstArtwork.image],
         },
     };
