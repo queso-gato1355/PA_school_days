@@ -23,25 +23,27 @@ export async function generateMetadata({ params }) {
 
     const { width, height } = await getImageDimensions(art.image);
 
+    const artistName = decodeURIComponent(art.name);
+
     return {
         title: "PA School Days",
-        description: `${art.name}'s art! Check out here!`,
+        description: `${artistName}'s art! Check out here!`,
         openGraph: {
             title: "PA School Days",
-            description: `${art.name}'s art! Check out here!`,
+            description: `${artistName}'s art! Check out here!`,
             images: [
                 {
                     url: art.image,
                     width: width,
                     height: height,
-                    alt: `${art.name}'s artwork`,
+                    alt: `${artistName}'s artwork`,
                 },
             ],
         },
         twitter: {
             card: "summary_large_image",
             title: "PA School Days",
-            description: `${art.name}'s art! Check out here!`,
+            description: `${artistName}'s art! Check out here!`,
             images: [art.image],
         },
     };
