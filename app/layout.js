@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
             <body className={`${inter.className} bg-gradient-to-b from-[#F64ABD] to-[#fa67c9] text-white`}>
                 <NavBar />
                 {children}
+                <Analytics />
             </body>
         </html>
     );
