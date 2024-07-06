@@ -20,7 +20,7 @@ export default function SocialMedia({ mediaName, link, children }) {
 
     if (link === "None")
         return (
-            <div className="text-white">
+            <div className="text-white min-w-40">
                 <div
                     className={`flex-col items-center justify-center text-center p-2 ${bgColor} shadow-md rounded-xl`}
                 >
@@ -38,7 +38,7 @@ export default function SocialMedia({ mediaName, link, children }) {
             className="text-white"
         >
             <div
-                className={`flex-col items-center justify-center text-center p-2 ${bgColor} shadow-md rounded-xl hover:shadow-xl transition-all duration-200`}
+                className={`flex-col items-center justify-center text-center p-2 ${bgColor} shadow-md rounded-xl hover:shadow-xl transition-all duration-200 min-w-40`}
             >
                 <div className="flex justify-center">{icon}</div>
                 <div className="mt-1">{children}</div>

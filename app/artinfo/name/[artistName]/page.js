@@ -8,17 +8,27 @@ import fs from 'fs';
 import path from 'path';
 
 export async function getArtistData(artistName) {
-    const filePath = path.join(process.cwd(), 'public', 'artist_info.json');
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    const data = JSON.parse(jsonData);
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'artist_info.json');
+        const jsonData = fs.readFileSync(filePath, 'utf8');
+        const data = JSON.parse(jsonData);
 
-    const artists = data.artistList.filter((artist) => artist.name === artistName);
+        const artists = data.artistList.filter((artist) => {
+            return decodeURIComponent(artist.name) === artistName;
+        });
 
-    return artists;
+        return artists;
+    } catch (error) {
+        console.error('Error reading or parsing JSON file:', error);
+        return [];
+    }
 }
 
 export async function generateMetadata({ params }) {
-    const artistData = await getArtistData(params.artistName);
+    const encodedArtistName = params.artistName;
+    const artistName = decodeURIComponent(encodedArtistName);
+
+    const artistData = await getArtistData(artistName);
     if (!artistData || artistData.length === 0) return notFound();
 
     const firstArtwork = artistData[0];
@@ -49,14 +59,17 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ArtistPage({ params }) {
-    const artistData = await getArtistData(params.artistName);
+    const encodedArtistName = params.artistName;
+    const artistName = decodeURIComponent(encodedArtistName);
+
+    const artistData = await getArtistData(artistName);
     if (!artistData || artistData.length === 0) return notFound();
 
     return (
         <div className="w-full min-h-screen flex-col items-start justify-center">
             <Suspense fallback={<LoadingSpinner color={"magenta"} />}>
                 <ArtistContent
-                    artistName={params.artistName}
+                    artistName={artistName}
                     artistData={artistData}
                 />
             </Suspense>

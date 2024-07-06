@@ -26,7 +26,7 @@
         },
         {
             "id": "3",
-            "name": "MuYun",
+            "name": "牧云",
             "socials": [
                 {
                     "media": "None",
@@ -47,6 +47,30 @@
                 }
             ],
             "image": "/images/germs144693.jpg"
+        },
+        {
+            "id": "5",
+            "name": "OB",
+            "socials": [
+                {
+                    "media": "None",
+                    "id": "OB",
+                    "link": "None"
+                }
+            ],
+            "image": "/images/OB.png"
+        },
+        {
+            "id": "6",
+            "name": "九十九一三",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@CorvusBlackONE",
+                    "link": "https://x.com/CorvusBlackONE"
+                }
+            ],
+            "image": "/images/CorvusBlackONE.jpg"
         }
     ]
 }
