@@ -83,6 +83,18 @@
                 }
             ],
             "image": "/images/eiocbrtn8916.png"
+        },
+        {
+            "id": "8",
+            "name": "뫂",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@slrsparnlcksg",
+                    "link": "https://x.com/slrsparnlcksg"
+                }
+            ],
+            "image": "/images/slrsparnlcksg.jpg"
         }
     ]
 }
