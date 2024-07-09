@@ -21,6 +21,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Dovemayo";
+    src: url("/fonts/Dovemayo_gothic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @layer utilities {
     .paused {
         animation-play-state: paused;

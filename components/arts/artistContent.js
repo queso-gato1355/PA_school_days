@@ -8,7 +8,7 @@ export default function ArtistContent({ artistName, artistData }) {
     return (
         <>
             <div className="text-center p-4 m-4 max-[669px]:p-1 max-[669px]:m-1">
-                <label className="text-5xl max-[669px]:text-2xl font-bazzi font-bold">
+                <label className="text-5xl max-[669px]:text-2xl font-dovemayo font-bold">
                     {" "}
                     {artistName}'s Art{" "}
                 </label>

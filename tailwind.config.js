@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         goyang: ['Goyang', 'sans-serif'],
+        dovemayo: ['Dovemayo', 'sans-serif'],
         bazzi: ['Bazzi', 'sans-serif'],
       },
       keyframes: {
