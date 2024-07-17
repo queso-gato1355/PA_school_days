@@ -95,6 +95,54 @@
                 }
             ],
             "image": "/images/slrsparnlcksg.jpg"
+        },
+        {
+            "id": "9",
+            "name": "germs",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@germs144693",
+                    "link": "https://x.com/germs144693"
+                }
+            ],
+            "image": "/images/germs144693_2.jpg"
+        },
+        {
+            "id": "10",
+            "name": "혁",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@5206lex",
+                    "link": "https://x.com/5206lex"
+                }
+            ],
+            "image": "/images/5206lex.jpg"
+        },
+        {
+            "id": "11",
+            "name": "ice",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@ice50067617",
+                    "link": "https://x.com/ice50067617"
+                }
+            ],
+            "image": "/images/ice50067617.jpg"
+        },
+        {
+            "id": "12",
+            "name": "생각맛쿠키",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@THINK_COOKIE1",
+                    "link": "https://x.com/THINK_COOKIE1"
+                }
+            ],
+            "image": "/images/THINK_COOKIE1.jpg"
         }
     ]
 }
