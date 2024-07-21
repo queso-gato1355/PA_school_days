@@ -28,7 +28,7 @@ export default function About() {
                         <DiscordBubble
                             profilePic="/profile/adrian_profile.jpg"
                             username="Adrian"
-                            message="We need to do something. Or, the fandom is going to die."
+                            message="We need to do something. I can't spend my vacation like this."
                             time="2:02 PM"
                             delay={500}
                         />
