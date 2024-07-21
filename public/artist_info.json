@@ -143,6 +143,42 @@
                 }
             ],
             "image": "/images/THINK_COOKIE1.jpg"
+        },
+        {
+            "id": "13",
+            "name": "九十九一三",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@CorvusBlackONE",
+                    "link": "https://x.com/CorvusBlackONE"
+                }
+            ],
+            "image": "/images/CorvusBlackONE_2.jpg"
+        },
+        {
+            "id": "14",
+            "name": "스무디도둑",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@hongsisuje80659",
+                    "link": "https://x.com/hongsisuje80659"
+                }
+            ],
+            "image": "/images/hongsisuje80659.jpg"
+        },
+        {
+            "id": "15",
+            "name": "평범씌",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@pyeongbeom_si",
+                    "link": "https://x.com/pyeongbeom_si"
+                }
+            ],
+            "image": "/images/pyeongbeom_si.png"
         }
     ]
 }
