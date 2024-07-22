@@ -31,8 +31,7 @@ export default function ArtBeanList() {
             {artists && artists.length === 0 && (
                 <div className="text-xl w-full flex items-center justify-center">
                     <span className="text-center">
-                        The event deadline is not today. Please wait for the
-                        event to start!
+                        Please wait for the images...
                         <br /> Checkout the about page for more information.
                     </span>
                 </div>
