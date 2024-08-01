@@ -179,6 +179,30 @@
                 }
             ],
             "image": "/images/pyeongbeom_si.png"
+        },
+        {
+            "id": "16",
+            "name": "뭉",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@WriterSans",
+                    "link": "https://x.com/WriterSans"
+                }
+            ],
+            "image": "/images/WriterSans.png"
+        },
+        {
+            "id": "17",
+            "name": "Rawfish",
+            "socials": [
+                {
+                    "media": "twitter",
+                    "id": "@RAWFISH_illust",
+                    "link": "https://x.com/RAWFISH_illust"
+                }
+            ],
+            "image": "/images/RAWFISH_illust.jpg"
         }
     ]
 }
